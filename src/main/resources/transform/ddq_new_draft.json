@@ -1,0 +1,24 @@
+{
+  "template": "newDraft",
+  "method": ...,
+  "models": [
+    {
+      "name": "Company name",
+      "rowIndex": 7,
+      "cellIndex": 5,
+      "dataType": "string"
+    },
+    {
+      "name": "Other names used by the company (current and former, if any)",
+      "rowIndex": 8,
+      "cellIndex": 5,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's website address",
+      "rowIndex": 10,
+      "cellIndex": 5,
+      "dataType": "string"
+    }
+  ]
+}
