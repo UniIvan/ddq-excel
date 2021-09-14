@@ -1,4 +1,4 @@
-package phy.template;
+package phy.template.view;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,5 +1,7 @@
 package phy.util;
 
+import lombok.NoArgsConstructor;
+
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -16,6 +18,10 @@ public class DateTimeUtils  {
     public static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HHmmss");
     public static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyyMMdd");
     public static final DateTimeFormatter DATETIME_FORMATTER =  DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+
+    private DateTimeUtils(){
+
+    }
 
     /**
      * 获取当前系统时间

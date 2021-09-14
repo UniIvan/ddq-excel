@@ -1,4 +1,4 @@
-package phy.template;
+package phy.template.view;
 
 import lombok.Data;
 
@@ -11,5 +11,7 @@ public class DdqModel {
     //列
     private Integer cellIndex;
     //数据类型
-    private DdqDataTypeEnum dataType;
+    private String dataType;
+
+    private String value;
 }

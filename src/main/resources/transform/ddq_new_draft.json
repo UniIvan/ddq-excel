@@ -1,23 +1,779 @@
 {
   "template": "newDraft",
-  "method": ...,
+  "router": "newDraftRouter",
   "models": [
     {
       "name": "Company name",
       "rowIndex": 7,
-      "cellIndex": 5,
+      "cellIndex": 4,
       "dataType": "string"
     },
     {
       "name": "Other names used by the company (current and former, if any)",
       "rowIndex": 8,
-      "cellIndex": 5,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's primary physical address",
+      "rowIndex": 9,
+      "cellIndex": 4,
       "dataType": "string"
     },
     {
       "name": "Company's website address",
       "rowIndex": 10,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Person completing this DDQ - Name",
+      "rowIndex": 12,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Person completing this DDQ - Title",
+      "rowIndex": 12,
       "cellIndex": 5,
+      "dataType": "string"
+    },
+    {
+      "name": "Person completing this DDQ - Email",
+      "rowIndex": 12,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Person completing this DDQ - Phone",
+      "rowIndex": 12,
+      "cellIndex": 7,
+      "dataType": "string"
+    },
+    {
+      "name": "Person completing this DDQ - CRD # (if any)",
+      "rowIndex": 12,
+      "cellIndex": 8,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's Chief Compliance Officer or person responsible for the oversight of compliance policies and procedures (if different than person listed above) - Name",
+      "rowIndex": 14,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's Chief Compliance Officer or person responsible for the oversight of compliance policies and procedures (if different than person listed above) - Title",
+      "rowIndex": 14,
+      "cellIndex": 5,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's Chief Compliance Officer or person responsible for the oversight of compliance policies and procedures (if different than person listed above) - Email",
+      "rowIndex": 14,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's Chief Compliance Officer or person responsible for the oversight of compliance policies and procedures (if different than person listed above) - Phone",
+      "rowIndex": 14,
+      "cellIndex": 7,
+      "dataType": "string"
+    },
+    {
+      "name": "Company's Chief Compliance Officer or person responsible for the oversight of compliance policies and procedures (if different than person listed above) - CRD # (if any)",
+      "rowIndex": 14,
+      "cellIndex": 8,
+      "dataType": "string"
+    },
+    {
+      "name": "Date DDQ is completed or updated",
+      "rowIndex": 15,
+      "cellIndex": 4,
+      "dataType": "localDate"
+    },
+    {
+      "name": "General description of the company",
+      "rowIndex": 19,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Year the company was founded",
+      "rowIndex": 20,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Approximate number of full-time employees",
+      "rowIndex": 21,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Name of parent company, if any",
+      "rowIndex": 22,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Names of affiliates, if meaningful to the company's business",
+      "rowIndex": 23,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Year the company began selling data product(s)",
+      "rowIndex": 24,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Approximate number of customers purchasing the company's data products",
+      "rowIndex": 25,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Identify the types of customers purchasing the company's data products (e.g., financial services, advertisers, brands, industry participants, etc.) and approximate the percentage of each customer category buying your data",
+      "rowIndex": 26,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "In what country or countries are company employees or consultants who are serving your data business located?",
+      "rowIndex": 27,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have an affiliation with any investment advisers or other asset managers or any organization that has a trading desk?",
+      "rowIndex": 28,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Are any of the company's or its affiliates’ securities or debt publicly traded (or otherwise widely traded)? ",
+      "rowIndex": 29,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Are any of the company's or its affiliates’ securities or debt publicly traded (or otherwise widely traded)? - If yes, please explain and provide the ticker:",
+      "rowIndex": 29,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have professional liability insurance?",
+      "rowIndex": 30,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "What is the name of the Dataset to be provided to our firm? ",
+      "rowIndex": 34,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Please describe the Dataset. ",
+      "rowIndex": 35,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "In what year did the company begin offering the Dataset to customers?",
+      "rowIndex": 36,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "To how many customers does the company provide the Dataset and are any of these in the financial services industry? ",
+      "rowIndex": 37,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the Dataset publicly available for purchase? ",
+      "rowIndex": 38,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the Dataset distributed simultaneously to all customers?  ",
+      "rowIndex": 39,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the Dataset distributed simultaneously to all customers? - If no, please explain: ",
+      "rowIndex": 39,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Are there any access restrictions to the Dataset that would impact our firm's use of the Dataset for investment purposes?",
+      "rowIndex": 40,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Are there any access restrictions to the Dataset that would impact our firm's use of the Dataset for investment purposes? - If yes, please explain:",
+      "rowIndex": 40,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company the original collector of the data/inputs used to create the Dataset?",
+      "rowIndex": 41,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Describe the company's data collection process, including the types of inputs used in that process, how information is sourced, and who specifically gathers the data. ",
+      "rowIndex": 42,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "In what jurisdictions does the company collect data contained in the Dataset?",
+      "rowIndex": 43,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "In what jurisdictions does the company collect data contained in the Dataset? - If other or multiple regions, please identify:",
+      "rowIndex": 43,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Where does the company process the Dataset?",
+      "rowIndex": 44,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Where is the Dataset stored?",
+      "rowIndex": 45,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Where is the Dataset stored? - If other or multiple regions, please explain:",
+      "rowIndex": 45,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "How is the Dataset distributed to the company's customers?",
+      "rowIndex": 46,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "How is the Dataset distributed to the company's customers? - If other, please explain:",
+      "rowIndex": 46,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the Dataset provided to all company customers in the same form?",
+      "rowIndex": 47,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the Dataset provided to all company customers in the same form? - If no, please explain:",
+      "rowIndex": 47,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "What is the time lag between generation/collection of the underlying information and delivery of the Dataset to your customers?",
+      "rowIndex": 48,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain raw data (i.e., data in the original form collected by the company or its suppliers)?",
+      "rowIndex": 49,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company sell the Dataset, in whole or part, on an exclusive or semi-exclusive basis? ",
+      "rowIndex": 50,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company sell the Dataset, in whole or part, on an exclusive or semi-exclusive basis? - If yes, please explain:",
+      "rowIndex": 50,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Data your firm will provide represent a sample of a larger population (e.g., your firm provides 10% of the transactions it processes each month)? ",
+      "rowIndex": 51,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company collect any Personally Identifiable Information (“PII”) or personal data in connection with the Dataset? (PII/personal data means information that identifies or can reasonably be used to identify an individual natural person.)",
+      "rowIndex": 55,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If yes to the prior question, how does the company ensure that any such PII is compliant with laws governing the protection of PII?",
+      "rowIndex": 56,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "How does the company identify whether it collects PII or personal data?",
+      "rowIndex": 57,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset include any PII or personal data? ",
+      "rowIndex": 58,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset include any PII or personal data? - If yes, please explain:",
+      "rowIndex": 58,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain any personal health information (“PHI”)? ",
+      "rowIndex": 59,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain any personal health information (“PHI”)? - If yes, please explain:",
+      "rowIndex": 59,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company aggregate, anonymize, or partially mask the Dataset before it is provided to your customers?",
+      "rowIndex": 60,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company aggregate, anonymize, or partially mask the Dataset before it is provided to your customers? - If yes, please describe your de-identification or anonymization protocols:",
+      "rowIndex": 60,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset concern commercial or consumer activity outside the U.S. or relate to individuals residing outside the U.S.?  ",
+      "rowIndex": 61,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset concern commercial or consumer activity outside the U.S. or relate to individuals residing outside the U.S.?  -If yes, please identify the countries and/or regions:",
+      "rowIndex": 61,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain data collected from a consumer-facing app, software, device, panel, platform or other similar product or service?",
+      "rowIndex": 62,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If yes to the prior question, please explain (a) what information or notice is given to data subjects/entities regarding the collection, processing, disclosure and sharing of their data to third parties and for what purposes, and (b) whether their affirmative, informed consent is obtained.",
+      "rowIndex": 63,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have data processing or data control obligations under any U.S. or foreign and/or international laws or regulations (e.g., the EU/UK General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), China's Data Security Law (DSL), etc.)?",
+      "rowIndex": 64,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "dentify the applicable laws or regulations and describe the company's legal basis (or bases) for processing any personal data (e.g., consent from web-based privacy policy or similar terms, just-in-time notice, contract, opt-in, legitimate interest, etc.).",
+      "rowIndex": 66,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Please describe any steps taken by the company to remove the Dataset from the scope of any data privacy regulation or limit the impact of such regulation on processing the Dataset (e.g., deidentification, pseudonymization, encryption, synthetic data, etc.).",
+      "rowIndex": 67,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company collect any of its data, directly or indirectly, through (i) web scraping (e.g., you deep-link, scrape, crawl or use robots, spiders, or other automated programs, devices, algorithms or methods to collect data from websites), or (ii) from any smartphone apps or desktop apps made available through an app store? ",
+      "rowIndex": 71,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If yes to the prior question, please respond the remaining questions in this section. If no, please proceed to the next section of the DDQ. ",
+      "rowIndex": 72,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company collect data from websites that require creation of a login/password to access the data? ",
+      "rowIndex": 73,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company collect data from websites that require another affirmative action (e.g., checking a box to accept terms and conditions, completing a CAPTCHA or similar verification mechanism) to access the data?    ",
+      "rowIndex": 74,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If yes to either of the prior two questions, what steps does the company take to ensure that web scraping is permitted by the target websites and conducted in accordance with applicable law (e.g., reading the websites' terms and conditions and complying)?",
+      "rowIndex": 75,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company circumvent technical measures used by the target websites to block access (e.g., circumventing any CAPTCHAs, using proxy services to mask your identity, manipulating IP addresses or taking other actions to hide access)?  ",
+      "rowIndex": 76,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company circumvent technical measures used by the target websites to block access (e.g., circumventing any CAPTCHAs, using proxy services to mask your identity, manipulating IP addresses or taking other actions to hide access)? -If yes, please explain when and why the company uses such methods:  ",
+      "rowIndex": 76,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Has the company received any cease and desist letters from websites or app stores from which it collects data?  ",
+      "rowIndex": 77,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Has the company received any cease and desist letters from websites or app stores from which it collects data? - If yes, describe the circumstances, the company's response and resolution:  ",
+      "rowIndex": 77,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "From target websites or apps, does your company collect any PII, personal data, health information, financial information or information from children under the age of 13? ",
+      "rowIndex": 78,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "From target websites or apps, does your company collect any PII, personal data, health information, financial information or information from children under the age of 13? - If yes, please explain: ",
+      "rowIndex": 78,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company partner with third-party data suppliers to license any of the underlying/source data?   ",
+      "rowIndex": 82,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Describe the types of data suppliers you work with and the data they provide. ",
+      "rowIndex": 84,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have written permission to re-sell and distribute these suppliers’ data? ",
+      "rowIndex": 85,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "What representations does the company require from its third-party data suppliers to ensure it has the proper rights to use the third party’s data for its research purposes?  ",
+      "rowIndex": 86,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have requirements/guidelines about how your data suppliers gather and/or provide information to your company? If so, please share them and summarize whether you receive aggregate or individual user data. ",
+      "rowIndex": 87,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company undertake due diligence of third-party data suppliers? ",
+      "rowIndex": 88,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If yes to the prior question, please describe the diligence including how the company ensures its data suppliers have the legal right to provide the source data. ",
+      "rowIndex": 89,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company periodically review and/or conduct risk assessments or internal audits of its third-party data suppliers?  ",
+      "rowIndex": 90,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company periodically review and/or conduct risk assessments or internal audits of its third-party data suppliers? - If yes, please explain:  ",
+      "rowIndex": 90,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "What transformation, aggregation or other processing of raw data received by the company are performed, by or on behalf of the company, to create the Dataset? Examples may include categorization, analytics, and/or combining the data with other data and information. ",
+      "rowIndex": 91,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company or any affiliate a regulated entity (e.g., broker-dealer, investment advisor or bank, etc.)? ",
+      "rowIndex": 95,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company or any affiliate a regulated entity (e.g., broker-dealer, investment advisor or bank, etc.)? - If yes, please provide details / registration identifiers: ",
+      "rowIndex": 95,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have any employees dedicated to handling the legal and compliance aspects of its collection and dissemination of data? ",
+      "rowIndex": 96,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have any employees dedicated to handling the legal and compliance aspects of its collection and dissemination of data? - If yes, how many employees are in this function? ",
+      "rowIndex": 96,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have the legal rights necessary to license and deliver the Dataset to its customers, including an investment firm?  ",
+      "rowIndex": 97,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company collect or obtain Material Non-Public Information (MNPI)? (This is a legal term that generally refers to information about a public company that is not widely known, could affect a reasonable person’s investment decision, and is held by someone who is under a duty to keep the information confidential.)  ",
+      "rowIndex": 98,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain MNPI?  ",
+      "rowIndex": 99,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain MNPI? - If yes, please explain:",
+      "rowIndex": 99,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain any information that is subject to a duty to keep confidential?",
+      "rowIndex": 100,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the Dataset contain any information that is subject to a duty to keep confidential? - If yes, please explain:",
+      "rowIndex": 100,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "How does the company identify whether it has obtained and/or disseminated MNPI relating to a particular issuer or financial instrument? ",
+      "rowIndex": 100,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "How does the company identify whether it has obtained and/or disseminated MNPI relating to a particular issuer or financial instrument? ",
+      "rowIndex": 101,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Are employees required to sign an attestation that they will not provide MNPI or confidential information to your clients?",
+      "rowIndex": 102,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company provide compliance training to all employees?  ",
+      "rowIndex": 103,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If yes to the prior question, (a) is training mandatory, (b) what is the frequency of training, (c) who conducts compliance training, and (d) and what are the topics covered?",
+      "rowIndex": 104,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company maintain a list of securities which are restricted from (a) employee personal trading, and (b) publishing research related to a restricted security? ",
+      "rowIndex": 105,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company in receipt of a request for information from any government or national authority concerning, referring to, or relating to its collection or dissemination of data?",
+      "rowIndex": 106,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company in receipt of a request for information from any government or national authority concerning, referring to, or relating to its collection or dissemination of data? - If yes, please explain:",
+      "rowIndex": 106,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Has the company ever been sued or otherwise been the subject of any dispute or claim concerning, relating to, or referring to the firm's data or data business?",
+      "rowIndex": 107,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Has the company ever been sued or otherwise been the subject of any dispute or claim concerning, relating to, or referring to the firm's data or data business? - If yes, please explain:",
+      "rowIndex": 107,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company subject to any material litigation or government investigation on any matter?",
+      "rowIndex": 108,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Is the company subject to any material litigation or government investigation on any matter? - If yes, please explain:",
+      "rowIndex": 108,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company consult with outside counsel relating to the collection or dissemination of data?  ",
+      "rowIndex": 109,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company consult with outside counsel relating to the collection or dissemination of data? - If yes, please identify the law firm(s): ",
+      "rowIndex": 109,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have an affiliation with any government? ",
+      "rowIndex": 110,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have an affiliation with any government? - If yes, please explain: ",
+      "rowIndex": 110,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Has the company had any data breaches or material security incidents in the past five years? ",
+      "rowIndex": 114,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Has the company had any data breaches or material security incidents in the past five years? - If yes, please explain: ",
+      "rowIndex": 114,
+      "cellIndex": 6,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company have formally documented information technology security policies and procedures? ",
+      "rowIndex": 115,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company use anti-virus or anti-malware software to prevent viruses, malware, or other harmful or unauthorized access to computers, databases, and websites? ",
+      "rowIndex": 116,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Does the company employ vulnerability management tools to discover and remediate vulnerabilities in your IT systems?",
+      "rowIndex": 117,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Please describe the extent to which the Dataset or the company’s provision of the Dataset to customers depends on the company’s use of open source software (other than with respect to software used for general administrative purposes, e.g., spreadsheets, etc.) or data. ",
+      "rowIndex": 118,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "If in response to the prior question you noted the company has alternative software or data, please indicate how much time the company would need to transition to such alternative software or data. ",
+      "rowIndex": 119,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Company presentation or any marketing materials relevant to the Dataset",
+      "rowIndex": 123,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "A data dictionary describing the fields or other information contained in the Dataset",
+      "rowIndex": 124,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "A sample that includes all fields contained in the Dataset",
+      "rowIndex": 125,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Copies or the URLs of the company's Terms of Use, Terms of Service, and/or Privacy Policy containing the company's disclosures to end users (e.g., data subjects, entities or your customers), along with the same for any primary supplier of data used in the Dataset",
+      "rowIndex": 126,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Representative example of a form agreement the company uses with its data suppliers, or excerpts from the agreement, to show (i) the company's right to sell the Dataset, and (ii) the representations from your data supplier regarding its right to sell the data to the company without violation of any law or regulation or the rights of third parties",
+      "rowIndex": 127,
+      "cellIndex": 4,
+      "dataType": "string"
+    },
+    {
+      "name": "Compliance manual (or summary), employee code of ethics or other written policies or procedures regarding insider trading, information barriers and how the firm handles MNPI and confidential information",
+      "rowIndex": 128,
+      "cellIndex": 4,
       "dataType": "string"
     }
   ]
